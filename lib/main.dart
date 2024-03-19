@@ -24,6 +24,6 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(fontFamily: 'Urbanist', brightness: Brightness.dark),
         debugShowCheckedModeBanner: false,
         initialRoute: AppRoutes.login,
-        routes: AppRoutes.pages);
+        routes: AppRoutes.pages,);
   }
 }
