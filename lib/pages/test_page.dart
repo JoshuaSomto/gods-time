@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+class TestPage extends StatefulWidget {
+  const TestPage({super.key});
+
+  @override
+  State<TestPage> createState() => _TestPageState();
+}
+
+class _TestPageState extends State<TestPage> {
+   int count = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.blue[900],
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+      ),
+      body: Center(
+        child: Text(
+          'This is counter: $count',
+          style: TextStyle(fontSize: 30, color: Colors.white),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            count++;
+          });
+        }, backgroundColor: Colors.blue, shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(27)
+        ),
+        child: Icon(
+          Icons.add,
+        ),
+      ),
+    );
+  }
+}
