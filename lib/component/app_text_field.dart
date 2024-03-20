@@ -9,7 +9,8 @@ class AppTextField extends StatelessWidget {
     return TextField(
                   decoration: InputDecoration(
                       hintText: hint,
-                      border: OutlineInputBorder(
+                      labelText: hint,
+                      border: UnderlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
                       filled: true,

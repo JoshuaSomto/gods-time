@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gods_time/config/app_string.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 35,
                 ),
                 Text(
-                  'Hello, Welcome back',
+                 AppString.helloWelcome,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
